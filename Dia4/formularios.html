@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <form>
+        <label for="Texto">Texto</label>
+        <textarea name="Texto" id="Texto" placeholder="digite seu texto"></textarea>
+        <select name="Profissão">
+            <option value="Desenvolvedor">Desenvolvedor</option>
+            <option value="Programador">Programador</option>
+            <option value="RH">RH</option>
+            <option value="Professor">Professor</option>
+            <option value="Contador">Contador</option><br>
+        </select>
+        <br>
+        <input type="text" name="name" placeholder="Digite seu nome"/>
+        <br>
+        <input type="email" name ="email" placeholder="Digite seu e-mail" >
+        <br>
+        <input type="color" name ="color" placeholder="Escolha uma cor">
+        <br>
+        <input type="password" name ="password" placeholder="Digite sua senha">
+        <br>
+        <input type="date" name ="date" placeholder="Insira uma data">
+        <br>
+        <input type="datetime-local" name="datetime-local" placeholder="Insira uma data e hora">
+
+
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <center>
+
+        <h2>Fale conosco</h2>
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome completo" required><br><br>
+        
+        <label>E-mail:</label>
+        <input type="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+        
+        <label>Telefone:</label>
+        <input type="tel" name="telefone" placeholder="Digite seu telefone"><br><br>
+        
+        <label>Assunto:</label>
+        <input type="text" name="assunto" placeholder="Digite o assunto"><br><br>
+        
+        <label>Mensagem:</label>
+        <textarea name="mensagem" placeholder="Escreva sua mensagem" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</center>
+
+</body>
+</html>
