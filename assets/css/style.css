@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Nexa";
+    src: url("../fonts/Nexa-Heavy.ttf")
+}
+
+html{
+    background-color: rgb(126, 135, 170);
+}
+
+.img{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+header#header{
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Nexa;
+}
+
+
+#txtSobre{
+    background-color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#exp{
+    background-color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.experiencias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Nexa;
+}
+
+h3{
+    background-color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.links{
+    text-align: center;
+}
+
+.links a{
+    font-family: Nexa;
+    text-align: center;
+    color: rgb(141, 48, 68);
+}
+
+h2.formacao{
+    background-color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.styleFormacao{
+    font-family: Nexa;
+    text-align: center;
+}
+
+div.icons p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    font-family: Nexa;
+}
+
+div.icons img{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2%;
+    font-family: Nexa;
+    
+}
+
+h2.contato{
+    background-color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
