@@ -24,6 +24,8 @@ body {
 }
 
 h1{
+    margin-left: 15px;
+    width: 20vh;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px;
     text-align: center;
@@ -72,7 +74,13 @@ p {
     padding: 10px;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 5px 5px 5px black;
 }
+
+.icons a:hover {
+    opacity: 1; /* Totalmente opaco */
+}
+
 
 .imagem-items {
     width: 40px;
@@ -81,11 +89,24 @@ p {
 }
 
 
-.icons a h3{
-    margin-left: 7px;
-    color: black;
-    display: flex; 
-    justify-content: center; 
+.icons p{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: white;
+    text-align: center;
+    margin-left: 10px;
+    color: black;
+}
+
+.icons a:hover {
+    opacity: 1; /* Torna totalmente visível ao passar o mouse */
+}
+
+.icons a p {
+    color: black; /* Cor inicial */
+    transition: color 0.2s ease-in-out;
+}
+
+.icons a:hover p {
+    color: rgb(224, 68, 20); /* Muda a cor do texto no hover */
 }
