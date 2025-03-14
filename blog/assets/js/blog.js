@@ -49,3 +49,4 @@ function addPost(post){
 
 posts.forEach(addPost);
 menuEl.style.display="flex"
+
