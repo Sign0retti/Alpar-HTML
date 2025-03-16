@@ -1,112 +1,142 @@
-*{
-    margin: 0;
-    padding: 0 auto;
-    background-color: #5a94c4;
+@font-face {
+    font-family: "Nexa";
+    src: url("../fonts/Nexa-Heavy.ttf");
 }
 
-body {
-    text-align: center;
+html {
+    background-color: rgb(27, 47, 70);
+}
+
+.card-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 90px;
+    margin-top: 60px;
+}
+
+.card-img .imagem img {
+    width: 250px;
+    height: 250px;
+    margin-right: 50px;
+    border-radius: 30px;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+}
+
+.projeto-esquerda, .projeto-direita {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.cafeteria,
+.podcast,
+.byyouclosettable,
+.byyoucloset,
+.card,
+.blog,
+.form-contato {
+    font-family: Nexa;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-#header img {
-    text-align:justify;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 50px auto;
     margin-bottom: 20px;
-    margin-top: 1%;
-}
-
-h1{
-    margin-left: 15px;
-    width: 20vh;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 20px;
-    text-align: center;
-    font-size: medium;
-    display: block;
-    background-color: white;
-}
-h2 {
-    margin-top: 20%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header#header{
-    display: block;
-    font-size: 20px;
-    padding: 4px;
-    border-radius: 8px;
-    margin-bottom: 8px;
-    margin: 0 16px 8px;
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
-}
-
-about#about{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 20px;
-    text-align: center;
-    font-size: medium;
-    display: block;
-    background-color: white;
-}
-
-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: white;
-}
-
-
-.icons a{
-    width: 250px;
-    justify-content: center;
-    display: flex;
-    margin-bottom: 32px;
+    width: 100%; 
+    height: 10vh;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 10px;
+    text-align: center;
+    gap: 10px; 
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-shadow: 5px 5px 5px black;
 }
 
-.icons a:hover {
-    opacity: 1; /* Totalmente opaco */
+.cafeteria a,
+.podcast a,
+.byyouclosettable a,
+.byyoucloset a,
+.card a,
+.blog a,
+.form-contato a{
+    text-decoration: none;
+}
+
+.cafeteria img, .coffe img, .podcast img, .bate-papo img, .card img, .byyouclosettable img, .byyoucloset img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 
-.imagem-items {
-    width: 40px;
-    justify-content: left;
-    background-color: white;
+@media (max-width: 768px) {
+    .projetos { 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .projeto-4, .projeto-3 {
+        width: 100%; 
+    }
+
+    .card-img {
+        flex-direction: column;
+    }
 }
 
+.cafeteria:hover,
+.podcast:hover,
+.byyouclosettable:hover,
+.byyoucloset:hover,
+.card:hover,
+.blog:hover,
+.form-contato:hover {
+    transform: scale(1.1);
+}
 
-.icons p{
+.cafeteria a {
+    color: black;
+    opacity: 0.7;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.cafeteria a:hover {
+    color: #3498db;
+    opacity: 1;
+}
+
+.projects{
+    color: white;
+    font-family: Nexa;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-left: 10px;
+}
+
+.podcast a{
     color: black;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
 }
 
-.icons a:hover {
-    opacity: 1; /* Torna totalmente visível ao passar o mouse */
+.podcast a:hover{
+    color: #3498db;
+    opacity: 1;
 }
 
-.icons a p {
-    color: black; /* Cor inicial */
-    transition: color 0.2s ease-in-out;
+.byyouclosettable a{
+    color: black;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
 }
 
-.icons a:hover p {
-    color: rgb(224, 68, 20); /* Muda a cor do texto no hover */
+.byyouclosettable a:hover{
+    color: #3498db; 
+    opacity: 1;
 }
