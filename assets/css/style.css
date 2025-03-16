@@ -1,111 +1,142 @@
 @font-face {
     font-family: "Nexa";
-    src: url("../fonts/Nexa-Heavy.ttf")
+    src: url("../fonts/Nexa-Heavy.ttf");
 }
 
-html{
-    background-color: rgb(126, 135, 170);
+html {
+    background-color: rgb(27, 47, 70);
 }
 
-.img{
-    height: 30vh;
+.card-img {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 90px;
+    margin-top: 60px;
 }
 
-img{
-    border-radius: 50%;
-    width: 15%;
+.card-img .imagem img {
+    width: 250px;
+    height: 250px;
+    margin-right: 50px;
+    border-radius: 30px;
 }
 
-header#header{
-    justify-content: center;
-}
-
-h1{
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.about {
+.projetos {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;  
+    justify-content: space-between;
     width: 100%;
+    max-width: 700px;
+}
+
+.projeto-esquerda, .projeto-direita {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.cafeteria,
+.podcast,
+.byyouclosettable,
+.byyoucloset,
+.card,
+.blog,
+.form-contato {
     font-family: Nexa;
-}
-
-
-#txtSobre{
-    background-color: white;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#exp{
-    background-color: white;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.experiencias{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    font-family: Nexa;
-}
-
-h3{
-    background-color: white;
+    margin-bottom: 20px;
+    width: 100%; 
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.links{
-    text-align: center;
-}
-
-.links a{
-    font-family: Nexa;
-    text-align: center;
-    color: rgb(141, 48, 68);
-}
-
-h2.formacao{
-    background-color: white;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-div.styleFormacao{
-    font-family: Nexa;
-    text-align: center;
-}
-
-div.icons p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    font-family: Nexa;
-}
-
-div.icons img{
-    color: black;
+    gap: 10px; 
     text-decoration: none;
+}
+
+.cafeteria a,
+.podcast a,
+.byyouclosettable a,
+.byyoucloset a,
+.card a,
+.blog a,
+.form-contato a{
+    text-decoration: none;
+}
+
+.cafeteria img, .coffe img, .podcast img, .bate-papo img, .card img, .byyouclosettable img, .byyoucloset img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .projetos { 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .projeto-4, .projeto-3 {
+        width: 100%; 
+    }
+
+    .card-img {
+        flex-direction: column;
+    }
+}
+
+.cafeteria:hover,
+.podcast:hover,
+.byyouclosettable:hover,
+.byyoucloset:hover,
+.card:hover,
+.blog:hover,
+.form-contato:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do elemento em 10% */
+}
+
+.cafeteria a {
+    color: black;
+    opacity: 0.7; /* Opacidade reduzida quando o link não é hoverado */
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Transição para a cor e opacidade */
+}
+
+.cafeteria a:hover {
+    color: #3498db;  /* Muda a cor para azul quando o link é hoverado */
+    opacity: 1; /* Opacidade total ao passar o mouse */
+}
+
+.projects{
+    color: white;
+    font-family: Nexa;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2%;
-    font-family: Nexa;
-    
 }
 
-h2.contato{
-    background-color: white;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.podcast a{
+    color: black;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+
+.podcast a:hover{
+    color: #3498db;  /* Muda a cor para azul quando o link é hoverado */
+    opacity: 1; /* Opacidade total ao passar o mouse */
+}
+
+.byyouclosettable a{
+    color: black;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+
+.byyouclosettable a:hover{
+    color: #3498db;  /* Muda a cor para azul quando o link é hoverado */
+    opacity: 1; /* Opacidade total ao passar o mouse */
 }
